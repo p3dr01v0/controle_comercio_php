@@ -1,0 +1,8 @@
+create table vendas_itens(
+	item_venda_codigo serial,
+	venda_codigo int not null,
+	item_nome varchar(150) not null,
+	item_quantidade decimal(10, 2) not null,
+	primary key(item_venda_codigo),
+	foreign key(venda_codigo) references vendas(venda_codigo)
+)

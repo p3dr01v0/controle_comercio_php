@@ -1,0 +1,9 @@
+create table vendas(
+	venda_codigo serial,
+	venda_forma_pagamento varchar (50) not null,
+	venda_valor decimal(10, 2) not null,
+	venda_valor_pago decimal (10, 2) not null,
+	venda_data timestamp not null,
+	venda_troco decimal (10, 2) not null,
+	primary key (venda_codigo)
+);

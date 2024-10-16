@@ -1,0 +1,7 @@
+create table abrir_caixa(
+	abrir_caixa_codigo serial,
+	abrir_caixa_operador varchar (100) not null,
+	abrir_caixa_valor decimal(10, 2) not null,
+	abrir_caixa_data timestamp not null,
+	primary key (abrir_caixa_codigo)
+);
