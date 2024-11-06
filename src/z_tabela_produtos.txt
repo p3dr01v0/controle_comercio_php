@@ -1,0 +1,15 @@
+create table produtos(
+	codigo_produto serial,
+	prod_nome varchar(100) not null,
+	prod_fornecedor varchar(100) not null,
+	prod_marca varchar(100) not null,
+	prod_categoria varchar(100) not null,
+	prod_und_medida varchar (20) not null,
+	prod_quantidade int not null,
+	prod_preco_compra decimal(10,2) not null,
+	prod_preco_venda decimal(10,2) not null,
+	prod_data_cad timestamp not null,
+	prod_data_atualizacao date not null,
+	unique (prod_nome),
+	primary key(codigo_produto)
+);
